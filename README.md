@@ -40,7 +40,8 @@
     db.pets.find( {"name": "Kilha", "species": "Gato"} );
 
     { 
-        "_id" : ObjectId("5e629ee53f80ea9cb9d1a472"), "name" : "Kilha", 
+        "_id" : ObjectId("5e629ee53f80ea9cb9d1a472"), 
+        "name" : "Kilha", 
         "species" : "Gato" 
     }
 ```
@@ -63,11 +64,13 @@
     db.pets.find({"species": "Hamster"});
 
     { 
-        "_id" : ObjectId("5e629e883f80ea9cb9d1a470"), "name" : "Mike", 
+        "_id" : ObjectId("5e629e883f80ea9cb9d1a470"), 
+        "name" : "Mike", 
         "species" : "Hamster" 
     }
     { 
-        "_id" : ObjectId("5e62a1553f80ea9cb9d1a476"), "name" : "Frodo", 
+        "_id" : ObjectId("5e62a1553f80ea9cb9d1a476"), 
+        "name" : "Frodo", 
         "species" : "Hamster" 
     }
 ```
@@ -78,11 +81,13 @@
     db.pets.find( {"name": "Mike"});
 
     { 
-        "_id" : ObjectId("5e629e883f80ea9cb9d1a470"), "name" : "Mike", 
+        "_id" : ObjectId("5e629e883f80ea9cb9d1a470"), 
+        "name" : "Mike", 
         "species" : "Hamster" 
     }
     { 
-        "_id" : ObjectId("5e629eeb3f80ea9cb9d1a473"), "name" : "Mike", 
+        "_id" : ObjectId("5e629eeb3f80ea9cb9d1a473"), 
+        "name" : "Mike", 
         "species" : "Cachorro" 
     }
 ```
@@ -93,7 +98,8 @@
     db.pets.find( {"name": "Mike", "species" : "Cachorro"});
 
     { 
-        "_id" : ObjectId("5e629eeb3f80ea9cb9d1a473"), "name" : "Mike", 
+        "_id" : ObjectId("5e629eeb3f80ea9cb9d1a473"), 
+        "name" : "Mike", 
         "species" : "Cachorro" 
     }
 ```
