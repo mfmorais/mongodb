@@ -568,4 +568,25 @@ você investiria?
 1. Liste as pessoas que enviaram e-mails (de forma distinta, ou seja, sem
 repetir). Quantas pessoas são?
 
+```
+    db.stocks.aggregate([{$group:{_id:'$sender'}}, {$limit:10}])
+
+    { "_id" : "ssmith@uwtgc.org" }
+    { "_id" : "confadmin@ziffenergy.com" }
+    { "_id" : "tally@ssprd2.net" }
+    { "_id" : "wefinvitation@forbes.com" }
+    { "_id" : "cheryltd@tbardranch.com" }
+    { "_id" : "tour@rice.edu" }
+    { "_id" : "im1timescape@netscape.net" }
+    { "_id" : "mailings@cnn.com" }
+    { "_id" : "looksee@rocketmail.com" }
+    { "_id" : "iertx@hern.org" }
+```
+
 2. Contabilize quantos e-mails tem a palavra “fraud”
+
+```
+    db.stocks.find({ "text" : {$regex : "fraud"} }).count();
+
+    23
+```
